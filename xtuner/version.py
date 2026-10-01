@@ -24,3 +24,4 @@ def parse_version_info(version_str):
 
 
 version_info = parse_version_info(__version__)
+short_marker = "build-e2f7a3b5"
