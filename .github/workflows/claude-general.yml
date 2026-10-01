@@ -593,7 +593,7 @@ jobs:
 
           claude_args: |
               --max-turns ${{ env.CLAUDE_COMMENT_MAX_TURNS }}
-              --model claude-sonnet-4-6
+              --model opus
               --allowedTools "
                 Read,Write,Edit,MultiEdit,LS,Grep,Glob,Agent,WebSearch,WebFetch,
                 Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(grep:*),Bash(rg:*),
