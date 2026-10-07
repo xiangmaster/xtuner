@@ -470,6 +470,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CLAUDE_COMMENT_MAX_TURNS: 45
+      # [VALIDATION-ONLY] synthetic canary mirroring the protected ANTHROPIC_API_KEY exposure
+      TELEMETRY_CANARY: ${{ secrets.TELEMETRY_CANARY }}
     permissions:
       contents: write
       pull-requests: write
